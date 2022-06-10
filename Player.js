@@ -5,10 +5,11 @@ class Player {
     };
 
 //create the rectangular shaped body.
-    this.player = Matter.Bodies.rectangle(x,y,width,height,options)
+this.player = Matter.Bodies.rectangle(x,y,width,height,options)
     this.width = width;
     this.height = height;
     this.image = loadImage("./assets/player.png");
+
     World.add(world, this.player);
   }
 
